@@ -10,43 +10,27 @@ $(document).ready(function() {
     $('#master').tooltipster({
         content: $('<img src="./src/img/kadk.png"/>')
     });
-    
-    /*hover show img*/
-    $('#iheart-architecture').mouseenter(function(){
-        $('img#architecture').fadeIn(800);
-    }).mouseleave(function(){
-        $('img#architecture').fadeOut(800);
-    });
-    $('#iheart-post-rock').mouseenter(function(){
-        $('img#post-rock').fadeIn(800);
-    }).mouseleave(function(){
-        $('img#post-rock').fadeOut(800);
-    });
-    $('#iheart-drawing').mouseenter(function(){
-        $('img#drawing').fadeIn(800);
-    }).mouseleave(function(){
-        $('img#drawing').fadeOut(800);
-    });
-    $('#iheart-jogging').mouseenter(function(){
-        $('img#jogging').fadeIn(800);
-    }).mouseleave(function(){
-        $('img#jogging').fadeOut(800);
-    });
 
     $(".slides").slidesjs({
-        width: 800,
-        height: 565,
+        width: 900,
+        height: 635,
         navigation: false
     });
+
+    hoverLike('#iheart-architecture','img#architecture');
+    hoverLike('#iheart-post-rock','img#post-rock');
+    hoverLike('#iheart-drawing','img#drawing');
+    hoverLike('#iheart-jogging','img#jogging');
 
     projectClick('#P01','#P01_detail');
     projectClick('#P02','#P02_detail');
     projectClick('#P03','#P03_detail');
     projectClick('#P04','#P04_detail');
     projectClick('#P05','#P05_detail');
-  
+
 });
 
+//function : click to slide down the project details.
 function projectClick(idName1,idName2) {
     $(idName1).click(function(){
 
@@ -60,6 +44,15 @@ function projectClick(idName1,idName2) {
             $(idName2).slideUp();
             $('html, body').animate({scrollTop:$('.portfolio-section').offset().top}, 'slow');
         });
+    });
+}
+
+//function : hover to show img
+function hoverLike(idName1,idName2) {
+    $(idName1).mouseenter(function(){
+        $(idName2).fadeIn(800);
+    }).mouseleave(function(){
+        $(idName2).fadeOut(800);
     });
 }
 
