@@ -259,7 +259,7 @@ section{
     top: 0;
 }
 #img-circle {
-    z-index:1000;
+    z-index:300;
 }
 #post-rock,#architecture,#drawing,#jogging {
     z-index: 10;
@@ -281,7 +281,7 @@ section{
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 1.0em;
-    border-bottom: 1px solid #8d7c81;
+    border-bottom: 1px solid #B8C6CE;
 }
 #born, #bachelor, #master{
   color: #FFD306;
@@ -299,9 +299,9 @@ section{
     height: 50px;
     line-height: 50px;
     font-size: 14px;
-    background: #8d7c81;
+    background: #B8C6CE;
     color: #FFF;
-    border: 1px solid #8d7c81;
+    border: 1px solid #B8C6CE;
     border-radius: 8px;
 }
 #button_resume:hover {
@@ -319,7 +319,7 @@ section{
     margin-top: 7px;
     color: #FFF;
     text-align: center;
-    background: #7493B6;
+    background: #B8C6CE;
 }
 
 
@@ -456,6 +456,9 @@ p.text_box {
     font-size: 18px;
     padding-top: 50px
 }
+#email {
+    color: #FFF;
+}
 #github,#flickr,#gmail{
     display: inline-block;
     width: 50px;
@@ -521,13 +524,7 @@ p.text_box {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.close-btn {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    border: 1px solid red;
-    z-index: 3000;
-}
+
 .slides {
     margin-left: auto;
     margin-right: auto;
