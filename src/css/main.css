@@ -210,7 +210,8 @@ section{
     display: block;
     position: relative;
     color: #FFF;
-    padding: 80px;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 .brand-heading {
     font-size: 36px;
@@ -290,6 +291,8 @@ section{
 }
 .about-section p {
     padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
     color: #666665;
     font-weight: 300;
 }
@@ -361,7 +364,7 @@ section{
 /*PORTFOLIO*/
 #portfolio{
     color: #666665;
-    background-color: #F5F5F5;
+    background-color: #F9F9F9;
 }
 .portfolio-section {
     width: 100%;
@@ -372,9 +375,11 @@ section{
 }
 .portfolio-section p {
     display: inline-block;
-    width: 50%;
+    width: 80%;
     text-align: center;
     padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
     font-size: 14px;
     font-weight: 300;
 }
@@ -425,12 +430,11 @@ section{
     border-radius: 50%;
     opacity:0;
 }
-p.text_box {
-    display: block;
+.overlay p.text_box {
+    display: inline-block;
     position: relative;
-    width: 120px;
+    width: 100%;
     height: 70px;
-    margin-left: 15px;
     margin-top: 40px;
     color: white;
     font-weight: 500;
@@ -524,12 +528,6 @@ p.text_box {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
-.slides {
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-}
 .goback {
     display: inline-block;
     width: 100px;
@@ -550,17 +548,28 @@ p.text-box {
     line-height: 1.2em;
     text-align: justify;
 }
+
+.slides {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+}
+@media(max-width:900px) {
+    .slides {width: 768px;} 
+}
 @media(max-width:767px) {
-    .slides {
-        width: 100%;
-    }
+    .slides {width: 640px;} 
 }
-#slides {
-    display: none;
+@media(max-width:639px) {
+    .slides {width: 639px;} 
 }
-#slides .slidesjs-navigation {
-    margin-top:3px;
+
+
+.slidesjs-container {
+    width: 100%;
 }
+
 .slidesjs-pagination {
     margin: 6px 0 0;
     float: right;
