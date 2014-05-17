@@ -1,0 +1,289 @@
+/*--Background of section#main--*/
+/* Main */
+#main{
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+
+  z-index: -2;
+  /*--Chrome, Android, Safari,iOS--*/
+  background:
+  -webkit-linear-gradient(150deg,rgba(50,50,70,.7), transparent),
+  -webkit-linear-gradient(20deg, rgba(0,0,0,.9), transparent),
+  -webkit-radial-gradient(20% 20%, circle farthest-side,rgba(50,50,70,.5), transparent);
+  /*--Firefox--*/
+  background:
+  -moz-linear-gradient(150deg,rgba(50,50,70,.7), transparent),
+  -moz-linear-gradient(20deg, rgba(0,0,0,.9), transparent),
+  -moz-radial-gradient(20% 20%, circle farthest-side,rgba(50,50,70,.5), transparent);
+  /*--IE--*/
+  background:
+  -ms-linear-gradient(150deg,rgba(50,50,70,.7), transparent),
+  -ms-linear-gradient(20deg, rgba(0,0,0,.9), transparent),
+  -ms-radial-gradient(20% 20%, circle farthest-side,rgba(50,50,70,.5), transparent);
+  /*--Opera--*/
+  background:
+  -o-linear-gradient(150deg,rgba(50,50,70,.7), transparent),
+  -o-linear-gradient(20deg, rgba(0,0,0,.9), transparent),
+  -o-radial-gradient(20% 20%, circle farthest-side,rgba(50,50,70,.5), transparent);
+  /*----*/
+  background:
+  linear-gradient(150deg,rgba(50,50,70,.7), transparent),
+  linear-gradient(20deg, rgba(0,0,0,.9), transparent),
+  radial-gradient(20% 20%, circle farthest-side,rgba(50,50,70,.5), transparent);
+}
+#bg-01,
+#bg-02,
+#bg-03 {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: -1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+       -o-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#bg-01 {
+  /*--Chrome, Android, Safari,iOS--*/
+  background: 
+  -webkit-linear-gradient(60deg,rgba(25,50,75,.9), transparent),
+  
+  -webkit-radial-gradient(rgba(240,240,240,.9), transparent),
+  
+  
+  -webkit-radial-gradient(90% 75%, ellipse closest-corner,rgba(25,5,20,.8), transparent 280%),
+  
+  -webkit-radial-gradient(10% 10%, circle farthest-side,rgba(145,195,105,.9), transparent);
+  /*--Firefox--*/
+  background: 
+  -moz-linear-gradient(60deg,rgba(25,50,75,.9), transparent),
+  
+  -moz-radial-gradient(rgba(240,240,240,.9), transparent),
+  
+
+  -moz-radial-gradient(90% 75%, ellipse closest-corner,rgba(25,5,20,.8), transparent 280%),
+  
+  -moz-radial-gradient(10% 10%, circle farthest-side,rgba(145,195,105,.9), transparent);
+  /*--IE--*/
+  background: 
+  -ms-linear-gradient(60deg,rgba(25,50,75,.9), transparent),
+  
+  -ms-radial-gradient(rgba(240,240,240,.9), transparent),
+  
+  
+  -ms-radial-gradient(90% 75%, ellipse closest-corner,rgba(25,5,20,.8), transparent 280%),
+  
+  -ms-radial-gradient(10% 10%, circle farthest-side,rgba(145,195,105,.9), transparent);
+  /*--Opera--*/
+  background: 
+  -o-linear-gradient(60deg,rgba(25,50,75,.9), transparent),
+  
+  -o-radial-gradient(rgba(240,240,240,.9), transparent),
+  
+  
+  -o-radial-gradient(90% 75%, ellipse closest-corner,rgba(25,5,20,.8), transparent 280%),
+  
+  -o-radial-gradient(10% 10%, circle farthest-side,rgba(145,195,105,.9), transparent);
+  /*----*/
+  background: 
+  linear-gradient(60deg,rgba(25,50,75,.9), transparent),
+  
+  radial-gradient(rgba(240,240,240,.9), transparent),
+  
+  
+  radial-gradient(90% 75%, ellipse closest-corner,rgba(25,5,20,.8), transparent 280%),
+  
+  radial-gradient(10% 10%, circle farthest-side,rgba(145,195,105,.9), transparent);
+
+  -webkit-animation: opacityChange 15s steps(1000) infinite;
+     -moz-animation: opacityChange 15s steps(1000) infinite;
+      -ms-animation: opacityChange 15s steps(1000) infinite;
+       -o-animation: opacityChange 15s steps(1000) infinite;
+          animation: opacityChange 15s steps(1000) infinite;
+}
+
+#bg-02 {
+  /*--Chrome, Android, Safari,iOS--*/
+  background:
+  -webkit-linear-gradient(80deg,rgba(3,40,100,.7), transparent),
+  
+  -webkit-radial-gradient(rgba(240,240,240,.9), transparent),
+  
+  -webkit-radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent);
+  
+  
+  /*--Firefox--*/
+  background: 
+  -moz-linear-gradient(80deg,rgba(3,40,100,.7), transparent),
+  
+  -moz-radial-gradient(rgba(240,240,240,.9), transparent),
+  
+  -moz-radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent);
+  
+  
+  /*--IE--*/
+  background: 
+  -ms-linear-gradient(80deg,rgba(3,40,100,.7), transparent),
+  
+  -ms-radial-gradient(rgba(240,240,240,.9), transparent),
+  
+  -ms-radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent);
+  
+  
+  /*--Opera--*/
+  background: 
+  -o-linear-gradient(80deg,rgba(3,40,100,.7), transparent),
+  
+  -o-radial-gradient(rgba(240,240,240,.9), transparent),
+  
+  -o-radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent);
+  
+  
+  /*----*/
+  background: 
+  linear-gradient(80deg,rgba(3,40,100,.7), transparent),
+  
+  radial-gradient(rgba(240,240,240,.9), transparent),
+  
+  radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent);
+
+
+  -webkit-animation: opacityChange 10s steps(1000) infinite;
+     -moz-animation: opacityChange 10s steps(1000) infinite;
+      -ms-animation: opacityChange 10s steps(1000) infinite;
+       -o-animation: opacityChange 10s steps(1000) infinite;
+          animation: opacityChange 10s steps(1000) infinite;
+}
+
+#bg-03 {
+  /*--Chrome, Android, Safari,iOS--*/
+  background:
+  -webkit-linear-gradient(120deg,rgba(230,180,220,.7), transparent),
+  -webkit-linear-gradient(140deg, rgba(0,0,0,.9), transparent),
+  -webkit-radial-gradient(rgba(220,240,160,.7), transparent),
+  -webkit-radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent),
+  -webkit-radial-gradient(95% 60%, ellipse closest-corner,rgba(255,35,120,.5), transparent 500%),
+  -webkit-radial-gradient(10% 10%, circle farthest-side,rgba(140,185,140,.5), transparent);
+  /*--Firefox--*/
+  background: 
+  -moz-linear-gradient(120deg,rgba(230,180,220,.7), transparent),
+  -moz-linear-gradient(140deg, rgba(0,0,0,.9), transparent),
+  -moz-radial-gradient(rgba(220,240,160,.7), transparent),
+  -moz-radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent),
+  -moz-radial-gradient(95% 60%, ellipse closest-corner,rgba(255,35,120,.5), transparent 500%),
+  -moz-radial-gradient(10% 10%, circle farthest-side,rgba(140,185,140,.5), transparent);
+  /*--IE--*/
+  background: 
+  -ms-linear-gradient(120deg,rgba(230,180,220,.7), transparent),
+  -ms-linear-gradient(140deg, rgba(0,0,0,.9), transparent),
+  -ms-radial-gradient(rgba(220,240,160,.7), transparent),
+  -ms-radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent),
+  -ms-radial-gradient(95% 60%, ellipse closest-corner,rgba(255,35,120,.5), transparent 500%),
+  -ms-radial-gradient(10% 10%, circle farthest-side,rgba(140,185,140,.5), transparent);
+  /*--Opera--*/
+  background: 
+  -o-linear-gradient(120deg,rgba(230,180,220,.7), transparent),
+  -o-linear-gradient(140deg, rgba(0,0,0,.9), transparent),
+  -o-radial-gradient(rgba(220,240,160,.7), transparent),
+  -o-radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent),
+  -o-radial-gradient(95% 60%, ellipse closest-corner,rgba(255,35,120,.5), transparent 500%),
+  -o-radial-gradient(10% 10%, circle farthest-side,rgba(140,185,140,.5), transparent);
+  /*----*/
+  background: 
+  linear-gradient(120deg,rgba(230,180,220,.7), transparent),
+  linear-gradient(140deg, rgba(0,0,0,.9), transparent),
+  radial-gradient(rgba(220,240,160,.7), transparent),
+  radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent),
+  radial-gradient(95% 60%, ellipse closest-corner,rgba(255,35,120,.5), transparent 500%),
+  radial-gradient(10% 10%, circle farthest-side,rgba(140,185,140,.5), transparent);
+  
+  -webkit-animation: opacityChange 15s steps(1000) infinite;
+     -moz-animation: opacityChange 15s steps(1000) infinite;
+      -ms-animation: opacityChange 15s steps(1000) infinite;
+       -o-animation: opacityChange 15s steps(1000) infinite;
+          animation: opacityChange 15s steps(1000) infinite;
+}
+
+/*Background Animation*/
+@-webkit-keyframes opacityChange {
+  0% {opacity: 0;}
+  30% {opacity: 1;}
+  80% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@-moz-keyframes opacityChange {
+  0% {opacity: 0;}
+  30% {opacity: 1;}
+  80% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@-o-keyframes opacityChange {
+  0% {opacity: 0;}
+  30% {opacity: 1;}
+  80% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@-ms-keyframes opacityChange {
+  0% {opacity: 0;}
+  30% {opacity: 1;}
+  80% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes opacityChange {
+  0% {opacity: 0;}
+  30% {opacity: 1;}
+  80% {opacity: 0;}
+  100% {opacity: 0;}
+}
+/*Contact bg*/
+#bg-04 {
+  /*--Chrome, Android, Safari,iOS--*/
+  background:
+  -webkit-linear-gradient(120deg,rgba(230,180,220,.7), transparent),
+  -webkit-linear-gradient(140deg, rgba(0,0,0,.9), transparent),
+  -webkit-radial-gradient(rgba(220,240,160,.7), transparent),
+  -webkit-radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent),
+  -webkit-radial-gradient(10% 10%, circle farthest-side,rgba(140,185,140,.5), transparent);
+  /*--Firefox--*/
+  background: 
+  -moz-linear-gradient(120deg,rgba(230,180,220,.7), transparent),
+  -moz-linear-gradient(140deg, rgba(0,0,0,.9), transparent),
+  -moz-radial-gradient(rgba(220,240,160,.7), transparent),
+  -moz-radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent),
+  -moz-radial-gradient(10% 10%, circle farthest-side,rgba(140,185,140,.5), transparent);
+  /*--IE--*/
+  background: 
+  -ms-linear-gradient(120deg,rgba(230,180,220,.7), transparent),
+  -ms-linear-gradient(140deg, rgba(0,0,0,.9), transparent),
+  -ms-radial-gradient(rgba(220,240,160,.7), transparent),
+  -ms-radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent),
+  -ms-radial-gradient(10% 10%, circle farthest-side,rgba(140,185,140,.5), transparent);
+  /*--Opera--*/
+  background: 
+  -o-linear-gradient(120deg,rgba(230,180,220,.7), transparent),
+  -o-linear-gradient(140deg, rgba(0,0,0,.9), transparent),
+  -o-radial-gradient(rgba(220,240,160,.7), transparent),
+  -o-radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent),
+  -o-radial-gradient(10% 10%, circle farthest-side,rgba(140,185,140,.5), transparent);
+  /*----*/
+  background: 
+  linear-gradient(120deg,rgba(230,180,220,.7), transparent),
+  linear-gradient(140deg, rgba(0,0,0,.9), transparent),
+  radial-gradient(rgba(220,240,160,.7), transparent),
+  radial-gradient(center right, ellipse cover,rgba(240,250,190,.9), transparent),
+  radial-gradient(10% 10%, circle farthest-side,rgba(140,185,140,.5), transparent);
+}
